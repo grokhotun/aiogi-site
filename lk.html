@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="description" content="Описание">
+    <!-- Включить если нужна поддержка ie11 -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7289e9da-b810-4e99-973b-adc7197fefe4&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Личный кабинет</title>
+</head>
+
+<body>
+    <div class="preloader lock-padding">
+        <div class="preloader__body">Прелоадер</div>
+    </div>
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header class="s-header ">
+            <div class="container">
+                <div class="header header--lined">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu menu-header">
+                        <ul class="menu-header__list js-dropdown-menu">
+                            <li class="menu-header__item js-dropdown-btn">
+                                <a href="#" class="menu-header__link menu-header__link--with-arrow">Уроки</a>
+                            </li>
+                            <li class="menu-header__item js-dropdown-btn">
+                                <a href="#" class="menu-header__link menu-header__link--with-arrow">Программы</a>
+                            </li>
+                            <li class="menu-header__item">
+                                <a href="#" class="menu-header__link">Инструкторы</a>
+                            </li>
+                            <li class="menu-header__item">
+                                <a href="#" class="menu-header__link">Тарифы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="links.html" class="header__logo">
+                        <div class="header__img">
+                            <img src="img/logo.png" alt="Лого" />
+                        </div>
+                    </a>
+                    <ul class="header__actions actions-header">
+                        <li class="actions-header__item">
+                            <a href="#" class="actions-header__link">
+                                <svg class="icon icon-search ">
+                                    <use xlink:href="img/svg/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="actions-header__item">
+                            <a href="#" class="actions-header__link">
+                                <svg class="icon icon-heart ">
+                                    <use xlink:href="img/svg/sprite.svg#heart"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="actions-header__item">
+                            <a href="#popup-login" class="actions-header__link actions-header__link--underline js-popup-open">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-lk">
+                <div class="container">
+                    <div class="lk">
+                        <div class="lk__header">
+                            <div class="lk__row">
+                                <div class="title-section">
+                                    <span class="title-section__title   title-section__title--default">Личный кабинет</span>
+
+                                </div>
+                            </div>
+                            <div class="lk__row">
+                                <div class="lk__col lk__col--avatar">
+                                    <div class="lk__photo">
+                                        <img src="img/avatars/1.png" alt="Аватар" />
+                                    </div>
+                                </div>
+                                <div class="lk__col lk__col--info">
+                                    <span class="lk__name">Виктория Самойлова</span>
+                                    <span class="lk__age">26 лет</span>
+                                    <div class="lk__change-avatar change-avatar">
+                                        <span class="m-icon m-icon--camera"></span>
+                                        <span class="change-avatar__text"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk__body">
+                            <div class="lk__general-info general-info">
+                                <div class="general-info__header">
+                                    <span class="general-info__title">Общая информация</span>
+                                </div>
+                                <div class="general-info__body">
+                                    <div class="general-info__col">
+                                        <div class="form-group">
+                                            <span class="form-group__text">Электронная почта*</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Имя</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Фамилия</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Пол</span>
+                                            <div class="selector">
+                                                <input type="text" class="selector__input">
+                                                <button class="selector__current">Женский</button>
+                                                <div class="selector__options">
+
+                                                    <button data-value="Мужской" class="selector__option">Мужской</button>
+
+                                                    <button data-value="Женский" class="selector__option">Женский</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Язык интерфейса</span>
+                                            <div class="selector">
+                                                <input type="text" class="selector__input">
+                                                <button class="selector__current">Русский</button>
+                                                <div class="selector__options">
+
+                                                    <button data-value="Русский" class="selector__option">Русский</button>
+
+                                                    <button data-value="Английский" class="selector__option">Английский</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="general-info__col">
+                                        <div class="form-group">
+                                            <span class="form-group__text">Электронная почта*</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Страна</span>
+                                            <div class="selector">
+                                                <input type="text" class="selector__input">
+                                                <button class="selector__current">Россия</button>
+                                                <div class="selector__options">
+
+                                                    <button data-value="Россия" class="selector__option">Россия</button>
+
+                                                    <button data-value="США" class="selector__option">США</button>
+
+                                                    <button data-value="Украина" class="selector__option">Украина</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Город</span>
+                                            <div class="selector">
+                                                <input type="text" class="selector__input">
+                                                <button class="selector__current">Город</button>
+                                                <div class="selector__options">
+
+                                                    <button data-value="Уфа" class="selector__option">Уфа</button>
+
+                                                    <button data-value="Москва" class="selector__option">Москва</button>
+
+                                                    <button data-value="Санкт-Петербург" class="selector__option">Санкт-Петербург</button>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label for="i-1" class="radio ">
+                                            <input name="g-1" id="i-1" type="radio" class="radio__input">
+                                            <span class="radio__custom"></span>
+                                            <span class="radio__text">Общие рассылки</span>
+                                        </label>
+                                        <label for="i-2" class="radio ">
+                                            <input name="g-1" id="i-2" type="radio" class="radio__input">
+                                            <span class="radio__custom"></span>
+                                            <span class="radio__text">Продающая рассылка</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="general-info__footer">
+                                    <div class="form-group form-group--wide">
+                                        <div class="form-group__text">О себе</div>
+                                        <textarea name="" id="" cols="30" rows="10" class="general-info__textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-purchases">
+                <div class="container">
+                    <div class="purchases">
+                        <div class="purchases__header">
+                            <span class="purchases__title">Купленные уроки</span>
+                        </div>
+                        <div class="purchases__body">
+                            <div class="purchases__table">
+                                <div class="purchases__row purchases__row--head">
+                                    <div class="purchases__cell">Продукт</div>
+                                    <div class="purchases__cell">Дата начала</div>
+                                    <div class="purchases__cell">Дата окончания</div>
+                                    <div class="purchases__cell">Статус</div>
+                                    <div class="purchases__cell">Обновление подписки</div>
+                                    <div class="purchases__cell">Стоимость</div>
+                                </div>
+                                <div class="purchases__row">
+                                    <div class="purchases__cell purchases__cell--name">Годовый курс</div>
+                                    <div class="purchases__cell">02/06/2019</div>
+                                    <div class="purchases__cell">02/06/2020</div>
+                                    <div class="purchases__cell purchases__cell--status is-active">Активен</div>
+                                    <div class="purchases__cell">02/06/2021</div>
+                                    <div class="purchases__cell">8 736 рублей</div>
+                                </div>
+                                <div class="purchases__row">
+                                    <div class="purchases__cell purchases__cell--name">Программа “Подготовь тело к лету”</div>
+                                    <div class="purchases__cell"></div>
+                                    <div class="purchases__cell">Период не ограничен</div>
+                                    <div class="purchases__cell purchases__cell--status is-active">Активен</div>
+                                    <div class="purchases__cell">-</div>
+                                    <div class="purchases__cell">1 000 рублей</div>
+                                </div>
+                                <div class="purchases__row">
+                                    <div class="purchases__cell purchases__cell--name">Ежемесячная подписка</div>
+                                    <div class="purchases__cell">01/06/2019</div>
+                                    <div class="purchases__cell">31/06/2019</div>
+                                    <div class="purchases__cell purchases__cell--status">Завершен</div>
+                                    <div class="purchases__cell">-</div>
+                                    <div class="purchases__cell">3 000 рублей</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-credit-cards">
+                <div class="container">
+                    <div class="credit-cards">
+                        <div class="credit-cards__header">
+                            <span class="credit-cards__title">Привязанные карты</span>
+                        </div>
+                        <div class="credit-cards__body">
+                            <div class="credit-cards__cards">
+                                <div class="credit-card ">
+
+
+                                    <div class="credit-card__logo">
+                                        <svg class="icon icon-mastercard ">
+                                            <use xlink:href="img/svg/sprite.svg#mastercard"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="credit-card__number">
+                                        <span>5591</span>
+                                        <span>4729</span>
+                                        <span>2615</span>
+                                        <span>****</span>
+                                    </div>
+
+                                </div>
+                                <div class="credit-card credit-card--empty">
+
+                                    <span class="credit-card__add">
+            + Добавить карту
+        </span>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="credit-cards__footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        <footer class="s-footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__col col-footer-info">
+                        <div class="col-footer-info__row">
+                            <ul class="col-footer-info__list">
+                                <li><a href="#" class="col-footer-info__link">Обратная связь</a></li>
+                                <li><a href="#" class="col-footer-info__link">Условия пользования</a></li>
+                            </ul>
+                            <span class="col-footer-info__all-reserved">© 2020 aiogi. Все права защищены</span>
+                        </div>
+                        <div class="col-footer-info__row row-footer-socials">
+                            <a href="#" class="row-footer-socials__link">
+                                <svg class="icon icon-vk social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="row-footer-socials__link">
+                                <svg class="icon icon-inst social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#inst"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="row-footer-socials__link">
+                                <svg class="icon icon-fb social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__col col-footer-mailing">
+                        <div class="col-footer-mailing__row">
+                            <span class="col-footer-mailing__text">Подписаться на рассылку</span>
+                            <span class="col-footer-mailing__subtext">Будь в курсе самых последний обновлений</span>
+                        </div>
+                        <div class="col-footer-mailing__row">
+                            <form action="" class="form">
+                                <div class="subscribe-form">
+                                    <div class="subscribe-form__input">
+                                        <div class="form-group">
+                                            <input required data-pristine-required-message="Введите email" data-pristine-email data-pristine-email-message="Введите корректный email" placeholder="Email" type="text" class="input-field">
+                                        </div>
+                                    </div>
+                                    <button class="subscribe-form__button" type="submit">Подписаться</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="popup-login" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Войти на сайт</span>
+                </div>
+                <div class="popup__main">
+                    <form action="" class="form">
+                        <div class="popup__form">
+                            <div class="form-group">
+                                <input required data-pristine-email data-pristine-email-message="Введите корректный email" data-pristine-required-message="Это поле обязательно" placeholder="Электронная почта" type="text" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input required data-pristine-required-message="Это поле обязательно" placeholder="Пароль" type="password" class="form-group__input">
+                            </div>
+                            <a href="#popup-restore-password" class="popup__password-restore-btn js-popup-open">Забыли пароль?</a>
+                            <button class="popup__button btn btn--primary">Войти</button>
+                        </div>
+                    </form>
+                    <span class="popup__note">Нет аккаунта? <a href="#popup-register" class="js-popup-open">Регистрация</a></span>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                    <p class="popup__policy">Нажимая на кнопку Войти, я подтверждаю, что ознакомился и согласен с Пользовательским соглашением и Политикой конфидециальности.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-register" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Войти на сайт</span>
+                    <span class="popup__subtitle">Зарегистрируйся и получи доступ к бесплатным урокам!</span>
+                </div>
+                <div class="popup__main">
+                    <form action="" class="">
+                        <div class="popup__form">
+                            <div class="form-group">
+                                <input data-pristine-required-message="Введите имя" placeholder="Имя" type="text" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input data-pristine-email data-pristine-email-message="Введите корректный email" data-pristine-required-message="Введите email" placeholder="Электронная почта" type="text" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input id="password" data-pristine-required-message="Введите пароль" placeholder="Пароль" type="password" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input id="confirmPassword" data-pristine-required-message="Повторите пароль" placeholder="Повторить пароль" type="password" class="form-group__input">
+                            </div>
+                            <a href="#popup-thankyou" class="popup__button btn btn--primary js-popup-open">Регистрация</a>
+                        </div>
+                    </form>
+                    <span class="popup__note">Уже есть аккаунт? <a href="#popup-login" class="js-popup-open">Войти</a></span>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                    <p class="popup__policy">Нажимая на кнопку Войти, я подтверждаю, что ознакомился и согласен с Пользовательским соглашением и Политикой конфидециальности.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-restore-password" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Войти на сайт</span>
+                </div>
+                <div class="popup__main">
+                    <form action="" class="form">
+                        <div class="popup__form">
+                            <div class="form-group">
+                                <input required data-pristine-email data-pristine-email-message="Введите корректный email" data-pristine-required-message="Введите email" placeholder="Электронная почта" type="text" class="form-group__input">
+                            </div>
+                            <button class="popup__button btn btn--primary">Восстановить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-thankyou" class="popup popup--big">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Благодарим за регистрацию!</span>
+                    <span class="popup__note">Теперь Вы можете посмотреть <a href="">Бесплатные уроки</a> или <a href="">получить доступ ко всей библиотеке</a> всего за 700 рублей* в месяц, выбрав подходящий тариф ниже:</span>
+                    <span class="popup__subtitle">*стоимость в месяц при выборе абонемента на 6 месяцев доступа</span>
+                    <a href="" class="popup__button btn btn--primary">Неограниченный доступ к видеотеке aiogi</a>
+                </div>
+                <div class="popup__main">
+                    <div class="popup__tariffs">
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>1</span>
+                                    <span>месяц доступа</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>800</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>3</span>
+                                    <span>месяца доступа</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>2 250</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>6</span>
+                                    <span>месяцев доступа</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>4 200</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>1</span>
+                                    <span>месяц</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>800</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

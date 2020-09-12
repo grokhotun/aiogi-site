@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Ключевые слова">
+    <meta name="description" content="Описание">
+    <!-- Включить если нужна поддержка ie11 -->
+    <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7289e9da-b810-4e99-973b-adc7197fefe4&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <title>Избранное</title>
+</head>
+
+<body>
+    <div class="preloader lock-padding">
+        <div class="preloader__body">Прелоадер</div>
+    </div>
+    <div class="wrapper">
+        <!-- Шапка -->
+        <header class="s-header ">
+            <div class="container">
+                <div class="header header--lined">
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu menu-header">
+                        <ul class="menu-header__list js-dropdown-menu">
+                            <li class="menu-header__item js-dropdown-btn">
+                                <a href="#" class="menu-header__link menu-header__link--with-arrow">Уроки</a>
+                            </li>
+                            <li class="menu-header__item js-dropdown-btn">
+                                <a href="#" class="menu-header__link menu-header__link--with-arrow">Программы</a>
+                            </li>
+                            <li class="menu-header__item">
+                                <a href="#" class="menu-header__link">Инструкторы</a>
+                            </li>
+                            <li class="menu-header__item">
+                                <a href="#" class="menu-header__link">Тарифы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="links.html" class="header__logo">
+                        <div class="header__img">
+                            <img src="img/logo.png" alt="Лого" />
+                        </div>
+                    </a>
+                    <ul class="header__actions actions-header">
+                        <li class="actions-header__item">
+                            <a href="#" class="actions-header__link">
+                                <svg class="icon icon-search ">
+                                    <use xlink:href="img/svg/sprite.svg#search"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="actions-header__item">
+                            <a href="#" class="actions-header__link">
+                                <svg class="icon icon-heart ">
+                                    <use xlink:href="img/svg/sprite.svg#heart"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="actions-header__item">
+                            <a href="#popup-login" class="actions-header__link actions-header__link--underline js-popup-open">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-favourite">
+                <div class="container">
+                    <div class="favourite">
+                        <div class="favourite__header">
+                            <div class="favourite__col favourite__col--title">
+                                <svg class="icon icon-heart ">
+                                    <use xlink:href="img/svg/sprite.svg#heart"></use>
+                                </svg>
+                                <div class="title-section">
+                                    <span class="title-section__title   title-section__title--default">Избранное</span>
+
+                                </div>
+                            </div>
+                            <div class="favourite__col favourite__col--triggers">
+                                <a href="#tab-1" class="favourite__text js-tabs-trigger is-active">Уроки</a>
+                                <a href="#tab-2" class="favourite__text js-tabs-trigger">Программы</a>
+                            </div>
+                        </div>
+                        <div class="favourite__body">
+                            <div id="tab-1" class="favourite__cards js-tabs-content is-active">
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview hover">
+                                            <img src="img/videos/1.png" alt="Занимающийся йогой человек" />
+
+                                            <div class="template-card__marks">
+                                                <span class="bubbled-text">Кундалини</span>
+                                                <span class="bubbled-text">20 мин</span>
+                                            </div>
+
+
+
+                                            <div class="template-card__description">
+                                                <span class="template-card__title">Описание:</span>
+                                                <p class="template-card__text">
+                                                    Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Приветствие солнца - Хатха</span>
+                                        <span class="template-card__level">Начинающий</span>
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Резеда Анамова</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview hover">
+                                            <img src="img/videos/2.png" alt="Занимающийся йогой человек" />
+
+                                            <div class="template-card__marks">
+                                                <span class="bubbled-text">Кундалини</span>
+                                                <span class="bubbled-text">40 мин</span>
+                                            </div>
+
+
+
+                                            <div class="template-card__description">
+                                                <span class="template-card__title">Описание:</span>
+                                                <p class="template-card__text">
+                                                    Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Лотос - Медитация</span>
+                                        <span class="template-card__level">Средний</span>
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Степан Чекменёв</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview hover">
+                                            <img src="img/videos/3.png" alt="Занимающийся йогой человек" />
+
+                                            <div class="template-card__marks">
+                                                <span class="bubbled-text">Инь-йога</span>
+                                                <span class="bubbled-text">15 мин</span>
+                                            </div>
+
+
+
+                                            <div class="template-card__description">
+                                                <span class="template-card__title">Описание:</span>
+                                                <p class="template-card__text">
+                                                    Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Йога Дома - Приветствие</span>
+                                        <span class="template-card__level">Продвинутый</span>
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Ольга Ларионова</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div id="tab-2" class="favourite__cards js-tabs-content">
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview ">
+                                            <img src="img/videos/1.png" alt="Занимающийся йогой человек" />
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Приветствие солнца</span>
+
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Резеда Анамова</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview ">
+                                            <img src="img/videos/4.png" alt="Занимающийся йогой человек" />
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Сложные элементы</span>
+
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Степан Чекменев</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview ">
+                                            <img src="img/videos/11.png" alt="Занимающийся йогой человек" />
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Правильное дыхание</span>
+
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Резеда Анамова</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview ">
+                                            <img src="img/videos/12.png" alt="Занимающийся йогой человек" />
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Йога для беременных</span>
+
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Резеда Анамова</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                                <a href="#" class="template-card ">
+                                    <div class="template-card__header">
+                                        <div class="template-card__preview ">
+                                            <img src="img/videos/19.png" alt="Занимающийся йогой человек" />
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="template-card__body">
+                                        <span class="template-card__name">Йога стандарт</span>
+
+
+                                    </div>
+
+                                    <div class="template-card__footer">
+                                        <div class="text-with-icon">
+                                            <svg class="icon icon-human ">
+                                                <use xlink:href="img/svg/sprite.svg#human"></use>
+                                            </svg>
+                                            <span class="text-with-icon__text">Резеда Анамова</span>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        <footer class="s-footer">
+            <div class="container">
+                <div class="footer">
+                    <div class="footer__col col-footer-info">
+                        <div class="col-footer-info__row">
+                            <ul class="col-footer-info__list">
+                                <li><a href="#" class="col-footer-info__link">Обратная связь</a></li>
+                                <li><a href="#" class="col-footer-info__link">Условия пользования</a></li>
+                            </ul>
+                            <span class="col-footer-info__all-reserved">© 2020 aiogi. Все права защищены</span>
+                        </div>
+                        <div class="col-footer-info__row row-footer-socials">
+                            <a href="#" class="row-footer-socials__link">
+                                <svg class="icon icon-vk social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#vk"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="row-footer-socials__link">
+                                <svg class="icon icon-inst social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#inst"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="row-footer-socials__link">
+                                <svg class="icon icon-fb social-icon">
+                                    <use xlink:href="img/svg/sprite.svg#fb"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__col col-footer-mailing">
+                        <div class="col-footer-mailing__row">
+                            <span class="col-footer-mailing__text">Подписаться на рассылку</span>
+                            <span class="col-footer-mailing__subtext">Будь в курсе самых последний обновлений</span>
+                        </div>
+                        <div class="col-footer-mailing__row">
+                            <form action="" class="form">
+                                <div class="subscribe-form">
+                                    <div class="subscribe-form__input">
+                                        <div class="form-group">
+                                            <input required data-pristine-required-message="Введите email" data-pristine-email data-pristine-email-message="Введите корректный email" placeholder="Email" type="text" class="input-field">
+                                        </div>
+                                    </div>
+                                    <button class="subscribe-form__button" type="submit">Подписаться</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="popup-login" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Войти на сайт</span>
+                </div>
+                <div class="popup__main">
+                    <form action="" class="form">
+                        <div class="popup__form">
+                            <div class="form-group">
+                                <input required data-pristine-email data-pristine-email-message="Введите корректный email" data-pristine-required-message="Это поле обязательно" placeholder="Электронная почта" type="text" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input required data-pristine-required-message="Это поле обязательно" placeholder="Пароль" type="password" class="form-group__input">
+                            </div>
+                            <a href="#popup-restore-password" class="popup__password-restore-btn js-popup-open">Забыли пароль?</a>
+                            <button class="popup__button btn btn--primary">Войти</button>
+                        </div>
+                    </form>
+                    <span class="popup__note">Нет аккаунта? <a href="#popup-register" class="js-popup-open">Регистрация</a></span>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                    <p class="popup__policy">Нажимая на кнопку Войти, я подтверждаю, что ознакомился и согласен с Пользовательским соглашением и Политикой конфидециальности.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-register" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Войти на сайт</span>
+                    <span class="popup__subtitle">Зарегистрируйся и получи доступ к бесплатным урокам!</span>
+                </div>
+                <div class="popup__main">
+                    <form action="" class="">
+                        <div class="popup__form">
+                            <div class="form-group">
+                                <input data-pristine-required-message="Введите имя" placeholder="Имя" type="text" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input data-pristine-email data-pristine-email-message="Введите корректный email" data-pristine-required-message="Введите email" placeholder="Электронная почта" type="text" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input id="password" data-pristine-required-message="Введите пароль" placeholder="Пароль" type="password" class="form-group__input">
+                            </div>
+                            <div class="form-group">
+                                <input id="confirmPassword" data-pristine-required-message="Повторите пароль" placeholder="Повторить пароль" type="password" class="form-group__input">
+                            </div>
+                            <a href="#popup-thankyou" class="popup__button btn btn--primary js-popup-open">Регистрация</a>
+                        </div>
+                    </form>
+                    <span class="popup__note">Уже есть аккаунт? <a href="#popup-login" class="js-popup-open">Войти</a></span>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                    <p class="popup__policy">Нажимая на кнопку Войти, я подтверждаю, что ознакомился и согласен с Пользовательским соглашением и Политикой конфидециальности.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-restore-password" class="popup">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Войти на сайт</span>
+                </div>
+                <div class="popup__main">
+                    <form action="" class="form">
+                        <div class="popup__form">
+                            <div class="form-group">
+                                <input required data-pristine-email data-pristine-email-message="Введите корректный email" data-pristine-required-message="Введите email" placeholder="Электронная почта" type="text" class="form-group__input">
+                            </div>
+                            <button class="popup__button btn btn--primary">Восстановить</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popup-thankyou" class="popup popup--big">
+        <div class="popup__wrapper">
+            <div class="popup__body">
+                <a href="" class="popup__close js-popup-close"></a>
+                <div class="popup__header">
+                    <span class="popup__title">Благодарим за регистрацию!</span>
+                    <span class="popup__note">Теперь Вы можете посмотреть <a href="">Бесплатные уроки</a> или <a href="">получить доступ ко всей библиотеке</a> всего за 700 рублей* в месяц, выбрав подходящий тариф ниже:</span>
+                    <span class="popup__subtitle">*стоимость в месяц при выборе абонемента на 6 месяцев доступа</span>
+                    <a href="" class="popup__button btn btn--primary">Неограниченный доступ к видеотеке aiogi</a>
+                </div>
+                <div class="popup__main">
+                    <div class="popup__tariffs">
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>1</span>
+                                    <span>месяц доступа</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>800</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>3</span>
+                                    <span>месяца доступа</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>2 250</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>6</span>
+                                    <span>месяцев доступа</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>4 200</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                        <div class="tariff-card">
+                            <div class="tariff-card__header">
+                                <div class="tariff-card__duration">
+                                    <span>1</span>
+                                    <span>месяц</span>
+                                </div>
+                            </div>
+                            <div class="tariff-card__body">
+                                <ul class="tariff-card__list">
+                                    <li class="tariff-card__item">50+ часов йоги</li>
+                                    <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+                                    <li class="tariff-card__item">HD качество на любом экране</li>
+                                    <li class="tariff-card__item">Комплексные программы</li>
+                                </ul>
+                                <div class="tariff-card__price">
+                                    <span>800</span>
+                                    <span>рублей</span>
+                                </div>
+                                <span class="tariff-card__price-per-month">750 рублей/месяц</span>
+                            </div>
+                            <div class="tariff-card__footer">
+                                <button class="tariff-card__button btn btn--primary">Выбрать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup__footer">
+                    <div class="popup__logo">
+                        <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendors.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
