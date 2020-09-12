@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Детали урока",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "lined":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-lesson-details">
+                <div class="container">
+                    <div class="lesson-details">
+                        <div class="lesson-details__header header-lesson-details">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Знакомство с йогой",
+                                "default":true
+                            })
+                            <span class="free-lesson-mark">Бесплатный урок</span>
+                        </div>
+                        <div class="lesson-details__body body-lesson-details">
+                            <div class="body-lesson-details__row">
+                                <div class="body-lesson-details__video">
+                                    <img src="img/video-player.png" alt="Видео плеер" />
+                                </div>
+                                <div class="body-lesson-details__info">
+                                    <div class="text-with-icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"human", "mod":""})
+                                        <span class="text-with-icon__text">Инструктор: Резеда Анамова</span>
+                                    </div>
+                                    <div class="text-with-icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"hat", "mod":""})
+                                        <span class="text-with-icon__text">Уровень: Начинающий</span>
+                                    </div>
+                                    <div class="text-with-icon">
+                                        <span class="text-with-icon__text">Тип йоги: Хатха</span>
+                                    </div>
+                                    <div class="text-with-icon body-lesson-details__favourite js-add-to-favourite">
+                                        @@include('./mixins/svg-icon.html', {"name":"heart", "mod":"is-favourite"})
+                                        <span class="text-with-icon__text">В избранное</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body-lesson-details__row">
+                                <span class="body-lesson-details__description-title">Описание:</span>
+                                <p class="body-lesson-details__text">Доказано, что йога так и работает. Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека). Тот, кто занимается йогой, становится здоровее и выносливее, после занятий чувствует прилив сил, а также с новой силой может ощутить вкус к жизни.</p>
+                            </div>
+                        </div>
+                        <div class="lesson-details__footer">
+                            <a href="#" class="btn btn--primary">Перейти к программе</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-similars">
+                <div class="container">
+                    <div class="similars">
+                        <div class="similars__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Похожие видео",
+                                "default":true
+                            })
+                        </div>
+                        <div class="similars__body">
+                            <div class="slider-similars">
+                                <div class="slider-similars__container">
+                                    <div class="slider-similars__wrapper swiper-wrapper">
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "classes":"swiper-slide",
+                                            "preview":"1.png",
+                                            "name":"Приветствие солнца - Хатха",
+                                            "level2":"Уровень: Начинающий"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "classes":"swiper-slide",
+                                            "preview":"2.png",
+                                            "name":"Лотос - Медитация",
+                                            "level2":"Уровень: Начинающий"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "classes":"swiper-slide",
+                                            "preview":"3.png",
+                                            "name":"Йога Дома - Приветствие",
+                                            "level2":"Уровень: Начинающий"
+                                        })
+                                    </div>
+                                </div>
+                                <div class="slider-similars__footer"></div>
+                                <span data-html-mover="slider-similars__footer, 0, 767" class="slider-similars__arrow slider-similars__arrow--prev"></span>
+                                <span data-html-mover="slider-similars__footer, 1, 767" class="slider-similars__arrow slider-similars__arrow--next"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-comments">
+                <div class="container">
+                    <div class="comments">
+                        <div class="comments__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Комментарии",
+                                "default":true
+                            })
+                            <form action="" class="form">
+                                <div class="comments__form form-comments">
+                                    <div class="form-comments__row">
+                                        <div class="form-comments__avatar">
+                                            <div class="form-comments__image">
+                                                <img src="img/avatars/1.png" alt="Аватар пользователя" />
+                                            </div>
+                                        </div>
+                                        <div class="form-group form-group--wide">
+                                            <textarea data-pristine-required-message="Отзыв не может быть пустым" required placeholder="Добавить комментарий" name="" id="" cols="30" rows="10" class="form-comments__textarea"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-comments__row form-comments__row--with-button">
+                                        <button class="form-comments__button btn btn--primary">Опубликовать</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="comments__body">
+                            @@include('./modules/comment-card/comment-card.html', {
+                                "name":"Виктория Самойлова",
+                                "date":"5 дней назад",
+                                "avatar":"2.png",
+                                "text":"Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь. Я веду достаточно активный образ жизни и чередую разные нагрузки, но йогу я практикую всегда.",
+                                "likes":"127 лайков"
+                            })
+                            @@include('./modules/comment-card/comment-card.html', {
+                                "response":true,
+                                "name":"Виктория Самойлова",
+                                "date":"5 дней назад",
+                                "avatar":"2.png",
+                                "text":"Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь. Я веду достаточно активный образ жизни и чередую разные нагрузки, но йогу я практикую всегда.",
+                                "likes":"127 лайков"
+                            })
+                            @@include('./modules/comment-card/comment-card.html', {
+                                "response":true,
+                                "name":"Виктория Самойлова",
+                                "date":"5 дней назад",
+                                "avatar":"2.png",
+                                "text":"Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь. Я веду достаточно активный образ жизни и чередую разные нагрузки, но йогу я практикую всегда.",
+                                "likes":"127 лайков"
+                            })
+                            @@include('./modules/comment-card/comment-card.html', {
+                                "name":"Александр Надолько",
+                                "date":"2 дня назад",
+                                "avatar":"3.png",
+                                "text":"Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь. Я веду достаточно активный образ жизни и чередую разные нагрузки, но йогу я практикую всегда.",
+                                "likes":"77 лайков"
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

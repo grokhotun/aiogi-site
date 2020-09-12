@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Главная",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    <div class="wrapper">
+        @@include('./modules/preloader/preloader.html')
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "nomargin":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            @@include('./modules/banner/banner.html')
+            <div class="s-advantages">
+                <div class="container">
+                    <div class="advantages">
+                        <div class="advantages__title">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Здоровое тело и гармония повсюду",
+                            })
+                        </div>
+                        <div class="advantages__blocks">
+                            <div class="advantages-item">
+                                <div class="advantages-item__icon">
+                                    <img src="img/advantages/ruble.svg" alt="Икнока валюты" />
+                                </div>
+                                <span class="advantages-item__text">Фиксированная стоимость подписки</span>
+                                <span class="advantages-item__subtext">Занимайтесь йогой в удовольствие и без лишних трат</span>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__icon">
+                                    <img src="img/advantages/yogee.svg" alt="Икнонка тренера йоги" />
+                                </div>
+                                <span class="advantages-item__text">50+ Уроков йоги разных уровней и направлений</span>
+                                <span class="advantages-item__subtext">В компании нашей команды экспертов</span>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__icon">
+                                    <img src="img/advantages/devices.svg" alt="Икнока ноутбука" />
+                                </div>
+                                <span class="advantages-item__text">Просматривайте видео на любом устройстве</span>
+                                <span class="advantages-item__subtext">Превосходное качество на телефоне или компьютере</span>
+                            </div>
+                            <div class="advantages-item">
+                                <div class="advantages-item__icon">
+                                    <img src="img/advantages/earth.svg" alt="Иконка планеты" />
+                                </div>
+                                <span class="advantages-item__text">Занимайтесь где угодно и когда угодно</span>
+                                <span class="advantages-item__subtext">Вы получаете доступ к урокам в режиме 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-program-choice">
+                <div class="container">
+                    <div class="program-choice">
+                        <div class="program-choice__col program-choice__col--content">
+                            <div class="program-choice__title">
+                                @@include('./modules/title-section/title-section.html', {
+                                    "title":"ВЫБЕРИ ПРОГРАММУ, КОТОРАЯ ПОДХОДИТ ИМЕННО ТЕБЕ",
+                                    "subtitle":"На aiogi ты найдешь комплексные программы в зависимости от твоего направления и уровня"
+                                })
+                            </div>
+                            <div class="program-choice__button">
+                                <a href="" class="btn btn--primary">Выбрать программу</a>
+                            </div>
+                        </div>
+                        <div class="program-choice__col">
+                            <div class="program-choice__image">
+                                <img src="img/backgrounds/bg-2.png" alt="Фото тренера йоги" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-instructors">
+                <div class="container">
+                    <div class="instructors">
+                        <div class="instructors__title">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"ДОВЕРЬСЯ ЭКСПЕРТАМ СВОЕГО ДЕЛА",
+                                "subtitle":"Занимайся с лучшими инструкторами по всему миру. Наши преподователи помогут тебе наработать новые навыки, улучшить твою практику йоги и достигнуть поставленных целей. И всегда с позитивным настроем!"
+                            })
+                        </div>
+                        <div class="instructors__slider">
+                            <div class="slider-instructors">
+                                <div class="slider-instructors__container">
+                                    <div class="slider-instructors__wrapper swiper-wrapper">
+                                        <div class="slider-instructors__slide swiper-slide">
+                                            <div class="slider-instructors__photo">
+                                                <img src="img/instructors/4.png" alt="Фото инструктора" />
+                                            </div>
+                                            <span class="slider-instructors__name">Резеда Анамова</span>
+                                        </div>
+                                        <div class="slider-instructors__slide swiper-slide">
+                                            <div class="slider-instructors__photo">
+                                                <img src="img/instructors/3.png" alt="Фото инструктора" />
+                                            </div>
+                                            <span class="slider-instructors__name">Ирина Плотникова</span>
+                                        </div>
+                                        <div class="slider-instructors__slide swiper-slide">
+                                            <div class="slider-instructors__photo">
+                                                <img src="img/instructors/2.png" alt="Фото инструктора" />
+                                            </div>
+                                            <span class="slider-instructors__name">Степан Чекменёв</span>
+                                        </div>
+                                        <div class="slider-instructors__slide swiper-slide">
+                                            <div class="slider-instructors__photo">
+                                                <img src="img/instructors/1.png" alt="Фото инструктора" />
+                                            </div>
+                                            <span class="slider-instructors__name">Марина Пастухова</span>
+                                        </div>
+                                        <div class="slider-instructors__slide swiper-slide">
+                                            <div class="slider-instructors__photo">
+                                                <img src="img/instructors/5.png" alt="Фото инструктора" />
+                                            </div>
+                                            <span class="slider-instructors__name">Екатерина Головнова</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider-instructors__footer"></div>
+                                <span data-html-mover="slider-instructors__footer, 0, 767" class="slider-instructors__arrow slider-instructors__arrow--prev"></span>
+                                <span data-html-mover="slider-instructors__footer, 1, 767" class="slider-instructors__arrow slider-instructors__arrow--next"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-subscribe">
+                <div class="container">
+                    <div class="subscribe">
+                        <div class="subscribe__col subscribe__col--photo">
+                            <div class="subscribe__image">
+                                <img src="img/backgrounds/bg-3.png" alt="Фото тренера йоги" />
+                            </div>
+                        </div>
+                        <div class="subscribe__col subscribe__col--content">
+                            <div class="subscribe__title">
+                                @@include('./modules/title-section/title-section.html', {
+                                    "title":"Готовы погрузиться в мир <span>aiogi</span>?",
+                                    "subtitle":"Неограниченный доступ к библиотеке от 700 рублей в месяц. Отменить подписку можно в любой момент"
+                                })
+                            </div>
+                            <div class="subscribe__button">
+                                <a href="" class="btn btn--primary">Выбрать программу</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

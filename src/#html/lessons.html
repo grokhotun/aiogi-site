@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Уроки",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "lined":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-page">
+                <div class="container">
+                    <div class="page">
+                        <aside class="page__aside">
+                            @@include('./modules/filter/filter.html')
+                        </aside>
+                        <main class="page__main">
+                            <div class="lessons">
+                                <div class="lessons__header">
+                                    @@include('./modules/title-section/title-section.html', {
+                                        "title":"Список уроков",
+                                        "default": true
+                                    })
+                                </div>
+                                <div class="lessons__body">
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"1.png",
+                                        "type":"Кундалини",
+                                        "duration":"20 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Приветствие солнца - Хатха",
+                                        "level":"Начинающий",
+                                        "trainer":"Резеда Анамова"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"2.png",
+                                        "type":"Кундалини",
+                                        "duration":"40 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Лотос - Медитация",
+                                        "level":"Средний",
+                                        "trainer":"Степан Чекменёв"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"3.png",
+                                        "type":"Инь-йога",
+                                        "duration":"15 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Йога Дома - Приветствие",
+                                        "level":"Продвинутый",
+                                        "trainer":"Ольга Ларионова"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"1.png",
+                                        "type":"Кундалини",
+                                        "duration":"20 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Приветствие солнца - Хатха",
+                                        "level":"Начинающий",
+                                        "trainer":"Резеда Анамова"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"2.png",
+                                        "type":"Кундалини",
+                                        "duration":"40 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Лотос - Медитация",
+                                        "level":"Средний",
+                                        "trainer":"Степан Чекменёв"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"3.png",
+                                        "type":"Инь-йога",
+                                        "duration":"15 мин",
+                                        "free": true,
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Йога Дома - Приветствие",
+                                        "level":"Продвинутый",
+                                        "trainer":"Ольга Ларионова"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"1.png",
+                                        "type":"Кундалини",
+                                        "duration":"20 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Приветствие солнца - Хатха",
+                                        "level":"Начинающий",
+                                        "trainer":"Резеда Анамова"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"2.png",
+                                        "type":"Кундалини",
+                                        "duration":"40 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Лотос - Медитация",
+                                        "level":"Средний",
+                                        "trainer":"Степан Чекменёв"
+                                    })
+                                    @@include('./modules/template-card/template-card.html', {
+                                        "hover":true,
+                                        "preview":"3.png",
+                                        "type":"Инь-йога",
+                                        "duration":"15 мин",
+                                        "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                        "name":"Йога Дома - Приветствие",
+                                        "level":"Продвинутый",
+                                        "trainer":"Ольга Ларионова"
+                                    })
+                                </div>
+                                <div class="lessons__footer">
+                                    <div class="lessons-showmore">
+                                        @@include('./mixins/svg-icon.html', {"name":"reload", "mod":""})
+                                        <span class="lessons-showmore__text">Загрузить больше</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

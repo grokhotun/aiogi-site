@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Екатерина Головнова",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-instructor-profile">
+                <div class="container">
+                    <div class="instructor-profile">
+                        <div class="instructor-profile__photo">
+                            <div class="instructor-profile__banner ibg">
+                                <img src="img/backgrounds/bg-6.png" alt="Фото инструктора" />
+                            </div>
+                        </div>
+                        <div class="instructor-profile__bio">
+                            <div class="instructor-profile__col instructor-profile__col--avatar">
+                                <div class="instructor-profile__image">
+                                    <img src="img/instructors/5.png" alt="Аватар инструктора" />
+                                </div>
+                            </div>
+                            <div class="instructor-profile__col instructor-profile__col--info">
+                                <span class="instructor-profile__name">Екатерина Головнова</span>
+                                <div class="instructor-profile__text">
+                                    <p>Йога в моей жизни появилась в 2009 году и стала любовью с первого взгляда. Первое знакомство было из любопытства, и это была йога Айенгара. А дальше все обернулось долгими и серьезными отношениями, которые продолжают крепнуть с каждым днем. </p>
+                                    <p>Поначалу йога воспринималась просто как физические упражнения. Но со временем восприятие изменилось, и сейчас йога для меня - это образ жизни и образ мышления.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptates itaque consectetur ad eum commodi, a optio sequi deleniti vitae eius magni velit sit recusandae quos non totam hic molestias eveniet tenetur saepe incidunt officia facilis? Cupiditate aperiam at quidem non aut esse quibusdam iure voluptates. Repellendus eveniet odit iste voluptatem magnam architecto ducimus perferendis quod harum exercitationem provident est voluptatibus, hic eaque accusantium distinctio dolorem laborum assumenda laboriosam eum sunt unde doloremque accusamus doloribus! Quod excepturi ex ipsum non neque assumenda ducimus suscipit placeat sed at dolores quos similique eos deserunt qui distinctio illo laborum odit deleniti, facilis cumque.</p>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptates itaque consectetur ad eum commodi, a optio sequi deleniti vitae eius magni velit sit recusandae quos non totam hic molestias eveniet tenetur saepe incidunt officia facilis? Cupiditate aperiam at quidem non aut esse quibusdam iure voluptates. Repellendus eveniet odit iste voluptatem magnam architecto ducimus perferendis quod harum exercitationem provident est voluptatibus, hic eaque accusantium distinctio dolorem laborum assumenda laboriosam eum sunt unde doloremque accusamus doloribus! Quod excepturi ex ipsum non neque assumenda ducimus suscipit placeat sed at dolores quos similique eos deserunt qui distinctio illo laborum odit deleniti, facilis cumque.</p>
+                                </div>
+                                <button class="instructor-profile__button js-button-unfold">Развернуть</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-instructor-offers">
+                <div class="container">
+                    <div class="instructor-offers">
+                        <div class="instructor-offers__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Уроки инструктора",
+                                "default": true,
+                                "secondary": true
+                            })
+                        </div>
+                        <div class="instructor-offers__body">
+                            @@include('./modules/template-card/template-card.html', {
+                                "hover":true,
+                                "preview":"1.png",
+                                "type":"Кундалини",
+                                "duration":"20 мин",
+                                "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                "name":"Приветствие солнца - Хатха",
+                                "level":"Начинающий",
+                            })
+                            @@include('./modules/template-card/template-card.html', {
+                                "hover":true,
+                                "free":true,
+                                "preview":"2.png",
+                                "type":"Кундалини",
+                                "duration":"40 мин",
+                                "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                "name":"Лотос - Медитация",
+                                "level":"Средний",
+                            })
+                            @@include('./modules/template-card/template-card.html', {
+                                "hover":true,
+                                "preview":"3.png",
+                                "type":"Инь-йога",
+                                "duration":"15 мин",
+                                "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                "name":"Йога Дома - Приветствие",
+                                "level":"Продвинутый",
+                            })
+                        </div>
+                    </div>
+                    <div class="instructor-offers">
+                        <div class="instructor-offers__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Программы инструктора",
+                                "default": true,
+                                "secondary": true
+                            })
+                        </div>
+                        <div class="instructor-offers__body">
+                            @@include('./modules/template-card/template-card.html', {
+                                "preview":"4.png",
+                                "name":"Сложные элементы",
+                            })
+                            @@include('./modules/template-card/template-card.html', {
+                                "preview":"8.png",
+                                "name":"Знакомство с йогой",
+                            })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

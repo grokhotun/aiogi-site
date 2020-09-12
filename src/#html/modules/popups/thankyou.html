@@ -1,0 +1,54 @@
+<div id="popup-thankyou" class="popup popup--big">
+    <div class="popup__wrapper">
+        <div class="popup__body">    
+            <a href="" class="popup__close js-popup-close"></a>
+            <div class="popup__header">
+                <span class="popup__title">Благодарим за регистрацию!</span>
+                <span class="popup__note">Теперь Вы можете посмотреть <a href="">Бесплатные уроки</a> или <a href="">получить доступ ко всей библиотеке</a> всего за 700 рублей* в месяц, выбрав подходящий тариф ниже:</span>
+                <span class="popup__subtitle">*стоимость в месяц при выборе абонемента на 6 месяцев доступа</span>
+                <a href="" class="popup__button btn btn--primary">Неограниченный доступ к видеотеке aiogi</a>
+            </div>
+            <div class="popup__main">
+                <div class="popup__tariffs">
+                    @@include('./modules/tariff-card/tariff-card.html', {
+                        "duration": {
+                            "num":"1",
+                            "text":"месяц доступа"
+                        },
+                        "price":"800",                        
+                        "monthly":"750 рублей/месяц"
+                    })
+                    @@include('./modules/tariff-card/tariff-card.html', {
+                        "duration": {
+                            "num":"3",
+                            "text":"месяца доступа"
+                        },
+                        "price":"2 250",                        
+                        "monthly":"750 рублей/месяц"
+                    })
+                    @@include('./modules/tariff-card/tariff-card.html', {
+                        "duration": {
+                            "num":"6",
+                            "text":"месяцев доступа"
+                        },
+                        "price":"4 200",                        
+                        "monthly":"750 рублей/месяц"
+                    })
+                    @@include('./modules/tariff-card/tariff-card.html', {
+                        "duration": {
+                            "num":"1",
+                            "text":"месяц"
+                        },
+                        "price":"800",                        
+                        "monthly":"750 рублей/месяц"
+                    })
+                </div>
+            </div>
+            <div class="popup__footer">
+                <div class="popup__logo">
+                    <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

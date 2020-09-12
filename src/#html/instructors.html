@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Инструкторы",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "lined":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-our-instructors">
+                <div class="container">
+                    <div class="our-instructors">
+                        <div class="our-instructors__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Доверься экспертам своего дела",
+                                "subtitle":"Занимайся с лучшими инструкторами по всему миру. Наши преподователи помогут тебе наработать новые навыки, улучшить твою практику йоги и достигнуть поставленных целей. И всегда с позитивным настроем!"
+                            })
+                        </div>
+                        <div class="our-instructors__body">
+                            <div class="our-instructors__item">
+                                <div class="our-instructors__col our-instructors__col--photo">
+                                    <div class="our-instructors__image">
+                                        <img src="img/instructors/3.png" alt="Фото инструктора" />
+                                    </div>
+                                </div>
+                                <div class="our-instructors__col our-instructors__col--info">
+                                    <span class="our-instructors__name">Ирина Плотникова</span>
+                                    <p class="our-instructors__bio">Преподаю йогу с 2014 года. Йога для меня – это универсальный
+                                        способ познания себя и окружающего мира. В ней не существует ограничений по возрасту или физическим способностям. Главное - это ощущение внутренней гармонии и любви не только на коврике, но и за её пределами.</p>
+                                    <a href="" class="our-instructors__link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="our-instructors__item">
+                                <div class="our-instructors__col our-instructors__col--photo">
+                                    <div class="our-instructors__image">
+                                        <img src="img/instructors/2.png" alt="Фото инструктора" />
+                                    </div>
+                                </div>
+                                <div class="our-instructors__col our-instructors__col--info">
+                                    <span class="our-instructors__name">Степан Чекменёв</span>
+                                    <p class="our-instructors__bio">С ранних лет я задавался вопросом кто есть "Я" и что из себя представляет окружающий мир. В возрасте 12 лет возникли первые попытки успокоить свой ум. Сейчас я понимаю что по этой дороге иду уже очень давно...</p>
+                                    <a href="" class="our-instructors__link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="our-instructors__item">
+                                <div class="our-instructors__col our-instructors__col--photo">
+                                    <div class="our-instructors__image">
+                                        <img src="img/instructors/1.png" alt="Фото инструктора" />
+                                    </div>
+                                </div>
+                                <div class="our-instructors__col our-instructors__col--info">
+                                    <span class="our-instructors__name">Марина Пастухова</span>
+                                    <p class="our-instructors__bio">Преподаю йогу с 2011 года в Париже для самой широкой аудитории, от детей до людей пожилого возраста, корпоративную йогу и в государственных учреждениях. Неоднократно участвовала в проекте Йога в Парках с Yoga Journal в Москве и различных йога-фестивалях</p>
+                                    <a href="" class="our-instructors__link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="our-instructors__item">
+                                <div class="our-instructors__col our-instructors__col--photo">
+                                    <div class="our-instructors__image">
+                                        <img src="img/instructors/5.png" alt="Фото инструктора" />
+                                    </div>
+                                </div>
+                                <div class="our-instructors__col our-instructors__col--info">
+                                    <span class="our-instructors__name">Екатерина Головнова</span>
+                                    <p class="our-instructors__bio">Йога в моей жизни появилась в 2009 году и стала любовью с первого взгляда. Первое знакомство было из любопытства, и это была йога Айенгара. А дальше
+                                        все обернулось долгими и серьезными отношениями, которые продолжают крепнуть с каждым днем. </p>
+                                    <a href="" class="our-instructors__link">Подробнее</a>
+                                </div>
+                            </div>
+                            <div class="our-instructors__item">
+                                <div class="our-instructors__col our-instructors__col--photo">
+                                    <div class="our-instructors__image">
+                                        <img src="img/instructors/4.png" alt="Фото инструктора" />
+                                    </div>
+                                </div>
+                                <div class="our-instructors__col our-instructors__col--info">
+                                    <span class="our-instructors__name">Резеда Анамова</span>
+                                    <p class="our-instructors__bio">Йога в моей жизни появилась в 2009 году и стала любовью с первого взгляда. Первое знакомство было из любопытства, и это была йога Айенгара. А дальше
+                                        все обернулось долгими и серьезными отношениями, которые продолжают крепнуть с каждым днем. </p>
+                                    <a href="" class="our-instructors__link">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

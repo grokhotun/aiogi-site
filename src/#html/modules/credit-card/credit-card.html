@@ -1,0 +1,18 @@
+<div class="credit-card @@if(context.empty){credit-card--empty}">
+    @@if(context.empty) {
+        <span class="credit-card__add">
+            + Добавить карту
+        </span>
+    }
+    @@if(!context.empty) {
+        <div class="credit-card__logo">
+            @@include('./mixins/svg-icon.html', {"name":"mastercard", "mod":""})
+        </div>
+        <div class="credit-card__number">
+            <span>5591</span>
+            <span>4729</span>         
+            <span>2615</span>
+            <span>****</span>
+        </div>
+    }
+</div>

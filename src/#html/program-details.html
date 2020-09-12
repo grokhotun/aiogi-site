@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Детали урока",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "lined":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-program-details">
+                <div class="container">
+                    <div class="program-details">
+                        <div class="program-details__col">
+                            <div class="program-details__video">
+                                <img src="img/videos/6.png" alt="Видео" />
+                                @@include('./mixins/svg-icon.html', {"name":"play-big", "mod":""})
+                            </div>
+                        </div>
+                        <div class="program-details__col">
+                            <div class="program-details__header">
+                                <span class="program-details__title">Путь к самопознанию и медитации</span>
+                                <div class="program-details__row">
+                                    <div class="text-with-icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"human", "mod":""})
+                                        <span class="text-with-icon__text">Степан Чекменев</span>
+                                    </div>
+                                    <div class="text-with-icon">
+                                        @@include('./mixins/svg-icon.html', {"name":"youtube", "mod":""})
+                                        <span class="text-with-icon__text">52 урока</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="program-details__body">
+                                <div class="program-details__info info-program-details">
+                                    <div class="info-program-details__item">
+                                        <span class="info-program-details__title">Тип йоги:</span>
+                                        <div class="info-program-details__body">
+                                            <span class="bubbled-text bubbled-text--b">Кундалини</span>
+                                            <span class="bubbled-text bubbled-text--b">Медитация</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-program-details__item">
+                                        <span class="info-program-details__title">Уровень:</span>
+                                        <div class="info-program-details__body">
+                                            <span class="bubbled-text bubbled-text--b">Средний</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-program-details__item">
+                                        <span class="info-program-details__title">Описание:</span>
+                                        <p class="info-program-details__text">Доказано, что йога так и работает. Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело. Тот, кто занимается йогой, становится здоровее и выносливее, после занятий чувствует прилив сил, а также с новой силой может ощутить вкус к жизни.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="program-details__footer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-program-lessons">
+                <div class="container">
+                    <div class="program-lessons">
+                        <div class="program-lessons__header">
+                            <span class="program-lessons__title">Уроки</span>
+                        </div>
+                        <div class="program-lessons__body">
+                            <a href="#" class="program-lessons__card card-program-lessons">
+                                <div class="card-program-lessons__header">
+                                    <div class="card-program-lessons__video">
+                                        <img src="img/videos/7.png" alt="Превью видеоурока" />
+                                    </div>
+                                </div>
+                                <div class="card-program-lessons__body">
+                                    <div class="card-program-lessons__name">1. Что такое медитация?</div>
+                                    <p class="card-program-lessons__text">Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь</p>
+                                </div>
+                            </a>
+                            <a href="#" class="program-lessons__card card-program-lessons">
+                                <div class="card-program-lessons__header">
+                                    <div class="card-program-lessons__video">
+                                        <img src="img/videos/8.png" alt="Превью видеоурока" />
+                                    </div>
+                                </div>
+                                <div class="card-program-lessons__body">
+                                    <div class="card-program-lessons__name">1. Что такое медитация?</div>
+                                    <p class="card-program-lessons__text">Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь</p>
+                                </div>
+                            </a>
+                            <a href="#" class="program-lessons__card card-program-lessons">
+                                <div class="card-program-lessons__header">
+                                    <div class="card-program-lessons__video">
+                                        <img src="img/videos/5.png" alt="Превью видеоурока" />
+                                    </div>
+                                </div>
+                                <div class="card-program-lessons__body">
+                                    <div class="card-program-lessons__name">1. Что такое медитация?</div>
+                                    <p class="card-program-lessons__text">Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь</p>
+                                </div>
+                            </a>
+                            <a href="#" class="program-lessons__card card-program-lessons">
+                                <div class="card-program-lessons__header">
+                                    <div class="card-program-lessons__video">
+                                        <img src="img/videos/9.png" alt="Превью видеоурока" />
+                                    </div>
+                                </div>
+                                <div class="card-program-lessons__body">
+                                    <div class="card-program-lessons__name">1. Что такое медитация?</div>
+                                    <p class="card-program-lessons__text">Сегодня я хочу рассказать про йогу… На самом деле я могу бесконечно говорить про нее, так как это моя любовь</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

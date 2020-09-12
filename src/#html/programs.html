@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Список программ",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "nomargin":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-programs-slider">
+                <div class="programs-slider">
+                    <div class="programs-slider__container">
+                        <div class="programs-slider__wrapper swiper-wrapper">
+                            <div class="programs-slider__slide swiper-slide">
+                                <div class="programs-slider__bg ibg">
+                                    <img src="img/backgrounds/bg-4.png" alt="Занимающийся йог" />
+                                </div>
+                                <div class="container">
+                                    <div class="programs-slider__content">
+                                        <span class="programs-slider__title">Как правильно дышать?</span>
+                                        <span class="programs-slider__subtitle">Рассказываем о дыхании. информация как для новичков так и для опытных</span>
+                                        <a href="" class="programs-slider__button btn btn--secondary">Смотреть сейчас</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="programs-slider__slide swiper-slide">
+                                <div class="programs-slider__bg ibg">
+                                    <img src="img/backgrounds/bg-4.png" alt="Занимающийся йог" />
+                                </div>
+                                <div class="container">
+                                    <div class="programs-slider__content">
+                                        <span class="programs-slider__title">Как правильно дышать?</span>
+                                        <span class="programs-slider__subtitle">Рассказываем о дыхании. информация как для новичков так и для опытных</span>
+                                        <a href="" class="programs-slider__button btn btn--secondary">Смотреть сейчас</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="programs-slider__slide swiper-slide">
+                                <div class="programs-slider__bg ibg">
+                                    <img src="img/backgrounds/bg-4.png" alt="Занимающийся йог" />
+                                </div>
+                                <div class="container">
+                                    <div class="programs-slider__content">
+                                        <span class="programs-slider__title">Как правильно дышать?</span>
+                                        <span class="programs-slider__subtitle">Рассказываем о дыхании. информация как для новичков так и для опытных</span>
+                                        <a href="" class="programs-slider__button btn btn--secondary">Смотреть сейчас</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="programs-slider__pagination"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-page">
+                <div class="container">
+                    <div class="page">
+                        <aside class="page__aside">
+                            @@include('./modules/filter/filter.html')
+                        </aside>
+                        <main class="page__main">
+                            <div class="programs">
+                                <div class="programs__category">
+                                    <div class="programs__header">
+                                        @@include('./modules/title-section/title-section.html', {
+                                            "title":"Хатха для продвинутых",
+                                            "default": true
+                                        })
+                                        <a href="" class="programs__link">Смотреть все</a>
+                                    </div>
+                                    <div class="programs__body">
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"1.png",
+                                            "name":"Приветствие солнца",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"4.png",
+                                            "name":"Сложные элементы",
+                                            "trainer":"Степан Чекменев"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"11.png",
+                                            "name":"Правильное дыхание",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"12.png",
+                                            "name":"Йога для беременных",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"19.png",
+                                            "name":"Йога стандарт",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                    </div>
+                                </div>
+                                <div class="programs__category">
+                                    <div class="programs__header">
+                                        @@include('./modules/title-section/title-section.html', {
+                                            "title":"Основы йоги",
+                                            "default": true
+                                        })
+                                        <a href="" class="programs__link">Смотреть все</a>
+                                    </div>
+                                    <div class="programs__body">
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"13.png",
+                                            "name":"7 правил дыхания",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"14.png",
+                                            "name":"Развиваем гибкость",
+                                            "trainer":"Степан Чекменев"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"15.png",
+                                            "name":"Медитация: введение",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"16.png",
+                                            "name":"Как сохранить тонус",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                    </div>
+                                </div>
+                                <div class="programs__category">
+                                    <div class="programs__header">
+                                        @@include('./modules/title-section/title-section.html', {
+                                            "title":"Программы для медитации",
+                                            "default": true
+                                        })
+                                        <a href="" class="programs__link">Смотреть все</a>
+                                    </div>
+                                    <div class="programs__body">
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"17.png",
+                                            "name":"Приветствие солнца",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"18.png",
+                                            "name":"Сложные элементы",
+                                            "trainer":"Степан Чекменев"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"19.png",
+                                            "name":"Правильное дыхание",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                        @@include('./modules/template-card/template-card.html', {
+                                            "preview":"20.png",
+                                            "name":"Йога для беременных",
+                                            "trainer":"Резеда Анамова"
+                                        })
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

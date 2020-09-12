@@ -1,0 +1,39 @@
+<div id="popup-login" class="popup">
+    <div class="popup__wrapper">
+        <div class="popup__body">    
+            <a href="" class="popup__close js-popup-close"></a>
+            <div class="popup__header">
+                <span class="popup__title">Войти на сайт</span>
+            </div>
+            <div class="popup__main">
+                <form action="" class="form">
+                    <div class="popup__form">
+                        <div class="form-group">
+                            <input
+                                required
+                                data-pristine-email
+                                data-pristine-email-message="Введите корректный email"
+                                data-pristine-required-message="Это поле обязательно" 
+                                placeholder="Электронная почта" type="text" class="form-group__input">
+                        </div>
+                        <div class="form-group">
+                            <input
+                                required
+                                data-pristine-required-message="Это поле обязательно" 
+                                placeholder="Пароль" type="password" class="form-group__input">
+                        </div>
+                        <a href="#popup-restore-password" class="popup__password-restore-btn js-popup-open">Забыли пароль?</a>
+                        <button class="popup__button btn btn--primary">Войти</button>
+                    </div>
+                </form>
+                <span class="popup__note">Нет аккаунта? <a href="#popup-register" class="js-popup-open">Регистрация</a></span>
+            </div>
+            <div class="popup__footer">
+                <div class="popup__logo">
+                    <div class="popup__img"><img src="img/logo.png" alt="Лого сайта" /></div>
+                </div>
+                <p class="popup__policy">Нажимая на кнопку Войти, я подтверждаю, что ознакомился и согласен с Пользовательским соглашением и Политикой конфидециальности.</p>
+            </div>
+        </div>
+    </div>
+</div>

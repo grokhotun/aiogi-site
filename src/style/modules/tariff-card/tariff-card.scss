@@ -1,0 +1,105 @@
+.tariff-card {
+    background: #FFFFFF;
+    border: 1px solid rgba(81, 81, 81, 0.35);
+    border-radius: 6px;
+    padding: 35px 23px;
+    display: flex;
+    flex-direction: column;
+    // .tariff-card__header
+    &__header {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 0px 0px 15px 0px;
+    }
+
+    // .tariff-card__duration
+
+    &__duration {
+        margin: 0px 0px 20px 0px;
+        span {
+            display: block;
+            &:first-child{
+                font-weight: 800;
+                font-size: 68px;
+                text-align: center;
+                color: #282828;
+            }
+            &:last-child{
+                font-weight: 600;
+                font-size: 15px;
+                text-align: center;
+                color: #121212;
+            }
+        }
+    }
+
+    // .tariff-card__body
+
+    &__body {
+        flex: 1;
+        text-align: center;
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .tariff-card__list
+
+    &__list {
+        margin: 0px 0px 20px 0px;
+        & > * {
+          &:not(:last-child) { margin: 0px 0px 20px 0px; }
+        }
+    }
+
+    // .tariff-card__item
+
+    &__item {
+        font-size: 13px;
+        line-height: 14px;
+        text-align: center;
+        color: #000000;
+    }
+
+    // .tariff-card__price
+
+    &__price {
+        margin: 0px 0px 20px 0px;
+        span {
+            display: block;
+            &:first-child{
+                font-weight: bold;
+                font-size: 21px;
+                line-height: 29px;
+                text-align: center;
+                color: #000000;
+            }
+
+            &:last-child{
+                font-size: 13px;
+                line-height: 18px;
+                text-align: center;
+                color: #000000
+            }
+        }
+    }
+
+    // .tariff-card__price-per-month
+
+    &__price-per-month {
+        font-weight: 600;
+        font-size: 12px;
+        text-align: center;
+        color: #000000;
+        opacity: 0.8;
+    }
+
+    // .tariff-card__footer
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    // .tariff-card__button
+    &__button {
+        padding: 10px 40px;
+        min-width: 174px;
+    }
+}

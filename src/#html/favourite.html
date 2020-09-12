@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Избранное",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "lined":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-favourite">
+                <div class="container">
+                    <div class="favourite">
+                        <div class="favourite__header">
+                            <div class="favourite__col favourite__col--title">
+                                @@include('./mixins/svg-icon.html', {"name":"heart", "mod":""})
+                                @@include('./modules/title-section/title-section.html', {
+                                    "title":"Избранное",
+                                    "default": true
+                                })
+                            </div>
+                            <div class="favourite__col favourite__col--triggers">
+                                <a href="#tab-1" class="favourite__text js-tabs-trigger is-active">Уроки</a>
+                                <a href="#tab-2" class="favourite__text js-tabs-trigger">Программы</a>
+                            </div>
+                        </div>
+                        <div class="favourite__body">
+                            <div id="tab-1" class="favourite__cards js-tabs-content is-active">
+                                @@include('./modules/template-card/template-card.html', {
+                                    "hover": true,
+                                    "preview":"1.png",
+                                    "type":"Кундалини",
+                                    "duration":"20 мин",
+                                    "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                    "name":"Приветствие солнца - Хатха",
+                                    "level":"Начинающий",
+                                    "trainer":"Резеда Анамова"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "hover":true,
+                                    "preview":"2.png",
+                                    "type":"Кундалини",
+                                    "duration":"40 мин",
+                                    "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                    "name":"Лотос - Медитация",
+                                    "level":"Средний",
+                                    "trainer":"Степан Чекменёв"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "hover":true,
+                                    "preview":"3.png",
+                                    "type":"Инь-йога",
+                                    "duration":"15 мин",
+                                    "description":"Эта эффективная и веками проверенная практика воздействует сразу на физическое и тонкое тело (оно отвечает за эмоции и мысли человека)",
+                                    "name":"Йога Дома - Приветствие",
+                                    "level":"Продвинутый",
+                                    "trainer":"Ольга Ларионова"
+                                })
+                            </div>
+                            <div id="tab-2" class="favourite__cards js-tabs-content">
+                                @@include('./modules/template-card/template-card.html', {
+                                    "preview":"1.png",
+                                    "name":"Приветствие солнца",
+                                    "trainer":"Резеда Анамова"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "preview":"4.png",
+                                    "name":"Сложные элементы",
+                                    "trainer":"Степан Чекменев"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "preview":"11.png",
+                                    "name":"Правильное дыхание",
+                                    "trainer":"Резеда Анамова"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "preview":"12.png",
+                                    "name":"Йога для беременных",
+                                    "trainer":"Резеда Анамова"
+                                })
+                                @@include('./modules/template-card/template-card.html', {
+                                    "preview":"19.png",
+                                    "name":"Йога стандарт",
+                                    "trainer":"Резеда Анамова"
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

@@ -1,0 +1,93 @@
+.favourite {
+
+    // .favourite__header
+
+    &__header {
+        display: flex;
+        align-items: center;
+        margin: 0px 0px 72px 0px;
+        @media (max-width:$maxwidth3){
+            flex-direction: column;
+        }
+    }
+
+    // .favourite__col
+
+    &__col {
+        display: flex;
+        align-items: center;
+        &--title {
+            @media (max-width:$maxwidth3){
+                margin: 0px 0px 20px 0px;
+            }
+            @media (min-width:$maxwidth3){
+                margin: 0px 90px 0px 0px;
+            }
+        }
+        .icon-heart {
+            fill: #000000;
+            width: 25px;
+            height: 25px;
+            margin: 0px 14px 0px 0px;
+        }
+        &--triggers {
+            & > * {
+              &:not(:last-child) { margin: 0px 40px 0px 0px; }
+            }
+        }
+    }
+
+    // .favourite__title
+    &__title {
+    }
+
+    // .favourite__text
+
+    &__text {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        color: #333333;
+        &.is-active {
+            border-bottom: 2px solid #000000;
+        }
+    }
+
+    // .favourite__body
+
+    &__body {
+    }
+
+    // .favourite__cards
+
+    &__cards {
+        display: none;
+        &.is-active {
+            display: flex;
+        }
+        flex-wrap: wrap;
+        margin: 0 -20px;
+        @media (max-width:$maxwidth2){
+            margin: 0 -10px;
+        }
+        @media (max-width:$maxwidth3){
+            margin: 0;
+        }
+        & > * {
+            flex: 0 0 calc(25% - 40px);
+            margin: 0 20px 20px 20px;
+            @media (max-width:$maxwidth1){
+                flex: 0 0 calc(33% - 40px);
+            }
+            @media (max-width:$maxwidth2){
+                margin: 10px 10px 10px;
+                flex: 0 0 calc(50% - 40px);
+            }
+            @media (max-width:$maxwidth3){
+                margin: 0px 0px 10px 0px;
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

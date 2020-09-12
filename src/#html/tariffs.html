@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Тарифы",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "lined":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-tariffs">
+                <div class="container">
+                    <div class="tariffs">
+                        <div class="tariffs__header">
+                            @@include('./modules/title-section/title-section.html', {
+                                "title":"Тарифы",
+                                "subtitle":"Получите неограниченный доступ к онлайн библиотеке и вступите в сообщество aiogi. Занимайтесь регулярно в любое время и в любом месте, совершенству нет предела!",
+                                "default": true
+                            })
+                        </div>
+                        <div class="tariffs__body">
+                            <div class="tariffs__cards">
+                                @@include('./modules/tariff-card/tariff-card.html', {
+                                    "duration": {
+                                        "num":"1",
+                                        "text":"месяц доступа"
+                                    },
+                                    "price":"800",                        
+                                    "monthly":"750 рублей/месяц"
+                                })
+                                @@include('./modules/tariff-card/tariff-card.html', {
+                                    "duration": {
+                                        "num":"3",
+                                        "text":"месяца доступа"
+                                    },
+                                    "price":"2 250",                        
+                                    "monthly":"750 рублей/месяц"
+                                })
+                                @@include('./modules/tariff-card/tariff-card.html', {
+                                    "duration": {
+                                        "num":"6",
+                                        "text":"месяцев доступа"
+                                    },
+                                    "price":"4 200",                        
+                                    "monthly":"750 рублей/месяц"
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-free-lessons">
+                <div class="container">
+                    <div class="free-lessons">
+                        <div class="free-lessons__header">
+                            <span class="free-lessons__title">ИЛИ</span>
+                            <span class="free-lessons__subtitle">Доступ к бесплатным урокам</span>
+                            <p class="free-lessons__text">Вам будет доступно свыше 10 уроков, чтобы ознакомится с aiogi</p>
+                            <a href="" class="free-lessons__btn btn btn--empty">Выбрать</a>
+                        </div>
+                        <div class="free-lessons__body">
+                            <div class="free-lessons__banner ibg">
+                                <img src="img/backgrounds/bg-4.png" alt="Фото девушки" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

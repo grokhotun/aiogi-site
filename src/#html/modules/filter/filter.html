@@ -1,0 +1,89 @@
+<div class="filter">
+    <div class="filter__header">
+        @@include('./modules/title-section/title-section.html', {
+            "title":"Фильтр",
+            "default": true
+        })
+    </div>
+    <div class="filter__body js-filter-body">
+        <div class="filter-item">
+            <span class="filter-item__name">Уровень</span>
+            <div class="filter-item__body">
+                <div class="filter-item__padding">
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Начинающий",
+                        "id":"i-1"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Средний",
+                        "id":"i-2"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Продвинутый",
+                        "id":"i-3"
+                    })
+                </div>
+            </div>
+        </div>
+        <div class="filter-item">
+            <span class="filter-item__name">Тип йоги</span>
+            <div class="filter-item__body">
+                <div class="filter-item__padding">
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Хатха",
+                        "id":"i-4"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Кундалини",
+                        "id":"i-5"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Аштанга-виньяса",
+                        "id":"i-6"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Инь-йога",
+                        "id":"i-7"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Бикрам",
+                        "id":"i-8"
+                    })
+                </div>
+            </div>
+        </div>
+        <div class="filter-item">
+            <span class="filter-item__name">Инструктор</span>
+            <div class="filter-item__body">
+                <div class="filter-item__padding">
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Резеда Анамова",
+                        "id":"i-9"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Ольга Ларионова",
+                        "id":"i-10"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Степан Чекменёв",
+                        "id":"i-11"
+                    })
+                    @@include('./modules/checkbox/checkbox.html', {
+                        "text":"Марина Пастухова",
+                        "id":"i-12"
+                    })
+                </div>
+            </div>
+        </div>
+        <div class="filter-slider">
+            <input type="text" class="filter-slider__input filter-slider__input--from">
+            <input type="text" class="filter-slider__input filter-slider__input--to">
+            <span class="filter-slider__name">Продолжительность (мин)</span>
+            <div class="filter-slider__line"></div>
+        </div>
+        @@include('./modules/checkbox/checkbox.html', {
+            "text":"Бесплатные уроки",
+            "id":"i-13"
+        })
+    </div>
+</div>

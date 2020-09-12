@@ -1,0 +1,35 @@
+<footer class="s-footer">
+    <div class="container">
+        <div class="footer">
+            <div class="footer__col col-footer-info">
+                <div class="col-footer-info__row">
+                    <ul class="col-footer-info__list">
+                        <li><a href="#" class="col-footer-info__link">Обратная связь</a></li>
+                        <li><a href="#" class="col-footer-info__link">Условия пользования</a></li>
+                    </ul>
+                    <span class="col-footer-info__all-reserved">© 2020 aiogi. Все права защищены</span>
+                </div>
+                <div class="col-footer-info__row row-footer-socials">
+                    <a href="#" class="row-footer-socials__link">
+                        @@include('./mixins/svg-icon.html', {"name":"vk", "mod":"social-icon"})
+                    </a>
+                    <a href="#" class="row-footer-socials__link">
+                        @@include('./mixins/svg-icon.html', {"name":"inst", "mod":"social-icon"})
+                    </a>
+                    <a href="#" class="row-footer-socials__link">
+                        @@include('./mixins/svg-icon.html', {"name":"fb", "mod":"social-icon"})
+                    </a>
+                </div>
+            </div>
+            <div class="footer__col col-footer-mailing">
+                <div class="col-footer-mailing__row">
+                    <span class="col-footer-mailing__text">Подписаться на рассылку</span>
+                    <span class="col-footer-mailing__subtext">Будь в курсе самых последний обновлений</span>
+                </div>
+                <div class="col-footer-mailing__row">
+                    @@include('./modules/subscribe-form/subscribe-form.html')
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

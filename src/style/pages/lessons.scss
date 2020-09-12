@@ -1,0 +1,47 @@
+.lessons {
+    // .lessons__header
+    &__header {
+        margin: 0px 0px 40px 0px;
+    }
+    // .lessons__body
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+        @media (max-width:$maxwidth2){
+            margin: 0;
+        }
+        & > * {
+            flex: 0 0 calc(33% - 40px);
+            margin: 0 20px 80px 20px;
+            @media (max-width:$maxwidth1){
+                flex: 0 0 calc(50% - 40px);
+            }
+            @media (max-width:$maxwidth2){
+                flex: 0 0 100%;
+                margin: 0px 0px 80px 0px;
+            }
+            @media (max-width:$maxwidth3){
+                margin: 0px 0px 20px 0px;
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.lessons-showmore {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // .lessons-showmore__text
+    &__text {
+        padding: 0px 0px 0px 7px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #090909;
+    }
+}

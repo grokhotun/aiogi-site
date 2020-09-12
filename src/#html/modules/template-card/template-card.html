@@ -1,0 +1,40 @@
+<a href="#" class="template-card @@if(context.classes){@@classes}">
+    <div class="template-card__header">
+        <div class="template-card__preview @@if(context.hover){hover}">
+            <img src="img/videos/@@preview" alt="Занимающийся йогой человек" />
+            @@if(context.type || context.duration) {
+                <div class="template-card__marks">
+                    <span class="bubbled-text">@@type</span>
+                    <span class="bubbled-text">@@duration</span>
+                </div>
+            }
+            @@if(context.free){<span class="template-card__free free-lesson-mark">Бесплатный урок</span>}
+            @@if(context.description) {
+                <div class="template-card__description">
+                    <span class="template-card__title">Описание:</span>
+                    <p class="template-card__text">
+                        @@description
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="template-card__body">
+        <span class="template-card__name">@@name</span>
+        @@if(context.level){<span class="template-card__level">@@level</span>}
+        @@if(context.level2){
+            <div class="text-with-icon">
+                @@include('./mixins/svg-icon.html', {"name":"hat", "mod":""})
+                <span class="text-with-icon__text">@@level2</span>
+            </div>
+        }
+    </div>
+    @@if(context.trainer){
+        <div class="template-card__footer">
+            <div class="text-with-icon">
+                @@include('./mixins/svg-icon.html', {"name":"human", "mod":""})
+                <span class="text-with-icon__text">@@trainer</span>
+            </div>
+        </div>
+    }
+</a>

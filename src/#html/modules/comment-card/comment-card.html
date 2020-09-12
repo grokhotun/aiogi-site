@@ -1,0 +1,24 @@
+<div class="comment-card @@if(context.response){comment-card--is-response}">
+    <div class="comment-card__col comment-card__col--avatar">
+        <div class="comment-card__photo">
+            <img src="img/avatars/@@avatar" alt="Фото пользователя" />
+        </div>
+    </div>
+    <div class="comment-card__col comment-card__col--content">
+        <div class="comment-card__header">
+            <span class="comment-card__name">@@name</span>
+            <span class="comment-card__date">@@date</span>
+        </div>
+        <div class="comment-card__body">
+            <p class="comment-card__text">@@text</p>
+        </div>
+        <div class="comment-card__footer">
+            <button class="comment-card__response-btn">Ответить</button>
+            <div class="comment-card__actions">
+                <span class="comment-card__likes">@@likes</span>
+                @@include('./mixins/svg-icon.html', {"name":"like", "mod":""})
+                @@include('./mixins/svg-icon.html', {"name":"dislike", "mod":""})
+            </div>
+        </div>
+    </div>
+</div>

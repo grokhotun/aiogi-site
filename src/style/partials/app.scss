@@ -1,0 +1,215 @@
+//Миксины
+@import "mixins.scss";
+@import "variables.scss";
+
+body {
+	@include no-touch-select;
+	font-size: 15px;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+.ibg {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	img {
+		display: none;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content {
+	flex: 1 1 auto;
+}
+
+.container {
+	max-width: $maxwidth + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $maxwidth1) {
+		max-width: 970px;
+	}
+	@media (max-width: $maxwidth2) {
+		max-width: 750px;
+	}
+	@media (max-width: $maxwidth3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+//==================================================================================================//
+//             ПОДКЛЮЧЕНИЕ ДОПОЛНИТЕЛЬНЫХ ФАЙЛОВ СТИЛЕЙ                                             //
+//==================================================================================================//
+
+@import "fonts";
+@import "null.scss";
+@import "ui.scss";
+@import "small-blocks.scss";
+
+.s {
+	&-header {
+		background-color: #fff;
+		margin: 0px 0px 70px 0px;
+		position: relative;
+		&--no-margin {
+			margin: 0;
+		}
+	}
+	&-banner {
+		position: relative;
+		// .banner__bg
+		&__bg {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			&:after {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background: #070707;
+				opacity: 0.5;
+			}
+		}
+	}
+
+	&-advantages {
+		padding: 134px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 50px 0;
+		}
+	}
+
+	&-instructors {
+		padding: 130px 0;
+		@media (max-width: $maxwidth3) {
+			padding: 50px 0;
+		}
+	}
+
+	&-subscribe {
+		margin: 0px 0px 67px 0px;
+	}
+
+	&-footer {
+	}
+
+	&-page {
+		margin: 0px 0px 211px 0px;
+	}
+
+	&-our-instructors {
+		margin: 0px 0px 170px 0px;
+	}
+
+	&-lesson-details {
+		margin: 0px 0px 51px 0px;
+	}
+
+	&-similars {
+		margin: 0px 0px 85px 0px;
+	}
+
+	&-comments {
+		margin: 0px 0px 235px 0px;
+	}
+
+	&-program-details {
+		margin: 0px 0px 55px 0px;
+	}
+
+	&-instructor-profile {
+		margin: 0px 0px 91px 0px;
+	}
+
+	&-instructor-offers {
+		margin: 0px 0px 322px 0px;
+	}
+
+	&-tariffs {
+		margin: 0px 0px 90px 0px;
+	}
+
+	&-free-lessons {
+		margin: 0px 0px 292px 0px;
+	}
+
+	&-lk {
+		margin: 0px 0px 78px 0px;
+	}
+
+	&-purchases {
+		margin: 0px 0px 78px 0px;
+	}
+
+	&-credit-cards {
+		margin: 0px 0px 242px 0px;
+	}
+
+	&-favourite {
+		margin: 0px 0px 670px 0px;
+	}
+
+	&-programs-slider {
+		margin: 0px 0px 43px 0px;
+	}
+}
+
+.page {
+	display: flex;
+	@media (max-width: $maxwidth3) {
+		flex-direction: column;
+	}
+	// .page__aside
+	&__aside {
+		flex: 0 0 280px;
+		border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
+		@media (max-width: $maxwidth3) {
+			border-right: none;
+			border-bottom: 1px solid rgba($color: #000000, $alpha: 0.1);
+			padding: 0px 0px 20px 0px;
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	// .page__main
+	&__main {
+		flex: 1;
+		padding: 0px 0px 0px 57px;
+		@media (max-width: $maxwidth2) {
+			padding: 0px 0px 0px 20px;
+		}
+		@media (max-width: $maxwidth3) {
+			padding: 0;
+		}
+	}
+}
+
+//Подключение стилей всех страниц
+@import "../pages/index.scss";
+@import "../pages/lessons.scss";
+@import "../pages/programs.scss";
+@import "../pages/instructors.scss";
+@import "../pages/lesson-details.scss";
+@import "../pages/program-details.scss";
+@import "../pages/instructor-profile.scss";
+@import "../pages/tariffs.scss";
+@import "../pages/lk.scss";
+@import "../pages/favourite.scss";
+
+//Подключение модулей
+@import "../modules/modules.scss";

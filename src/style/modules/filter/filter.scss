@@ -1,0 +1,109 @@
+.filter {
+    max-width: 220px;
+    // .filter__header
+    &__header {
+        margin: 0px 0px 30px 0px;
+    }
+    // .filter__body
+    &__body {
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 25px 0px;
+            }
+        }
+    }
+}
+
+.filter-item {
+    cursor: pointer;
+    &.is-opened {
+        .filter-item__name {
+            font-weight: bold;
+        }
+        .filter-item__body {
+            max-height: 500px;
+        }
+    }
+    // .filter-item__header
+    &__name {
+        display: inline-block;
+        font-size: 15px;
+        color: #000000;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            right: -12px;
+            top: 55%;
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+            background: url("../img/svg/sprite.svg#arrow") no-repeat;
+        }
+    }
+    // .filter-item__body
+    &__body {
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.3s ease;
+    }
+    &__padding {
+        padding: 20px 0px 0px 0px;
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+    }
+}
+
+.filter-slider {
+    padding: 0px 0px 35px 0px;
+    // .filter-slider__input
+    &__input {
+        display: none;
+        // .filter-slider__input--from
+        &--from {
+        }
+        &--to {
+        }
+    }
+    // .filter-slider__name
+    &__name {
+        display: inline-block;
+        font-size: 15px;
+        color: #000000;
+        margin: 0px 0px 14px 0px;
+    }
+    // .filter-slider__line
+    &__line {
+        &.noUi-target {
+            background-color: #ececec;
+            border-radius: 0;
+            border: none;
+            height: 4px;
+        }
+        .noUi-connect {
+            background-color: #121212;
+        }
+        .noUi-handle {
+            box-shadow: none;
+            right: 0;
+            width: 4px;
+            height: 14px;
+            background-color: #121212;
+            border: none;
+            border-radius: 0;
+            .noUi-tooltip {
+                bottom: unset;
+                border: none;
+                border-radius: none;
+                background: transparent;
+            }
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

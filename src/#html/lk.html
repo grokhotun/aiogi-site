@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./template/main.html', {
+    "title": "Личный кабинет",
+    "keywords": "Ключевые слова",
+    "description": "Описание"
+})
+<body>
+    @@include('./modules/preloader/preloader.html')
+    <div class="wrapper">
+        <!-- Шапка -->
+        @@include('./modules/header/header.html', {
+            "lined":true
+        })
+        <!-- Контент -->
+        <div class="content">
+            <div class="s-lk">
+                <div class="container">
+                    <div class="lk">
+                        <div class="lk__header">
+                            <div class="lk__row">
+                                @@include('./modules/title-section/title-section.html', {
+                                    "title":"Личный кабинет",
+                                    "default": true
+                                })
+                            </div>
+                            <div class="lk__row">
+                                <div class="lk__col lk__col--avatar">
+                                    <div class="lk__photo">
+                                        <img src="img/avatars/1.png" alt="Аватар" />
+                                    </div>
+                                </div>
+                                <div class="lk__col lk__col--info">
+                                    <span class="lk__name">Виктория Самойлова</span>
+                                    <span class="lk__age">26 лет</span>
+                                    <div class="lk__change-avatar change-avatar">
+                                        @@include('./mixins/icon.html', {"name":"camera"})
+                                        <span class="change-avatar__text"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lk__body">
+                            <div class="lk__general-info general-info">
+                                <div class="general-info__header">
+                                    <span class="general-info__title">Общая информация</span>
+                                </div>
+                                <div class="general-info__body">
+                                    <div class="general-info__col">
+                                        <div class="form-group">
+                                            <span class="form-group__text">Электронная почта*</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Имя</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Фамилия</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Пол</span>
+                                            @@include('./modules/selector/selector-item.html', {
+                                                "title":"Женский",
+                                                "options":['Мужской', 'Женский']
+                                            })
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Язык интерфейса</span>
+                                            @@include('./modules/selector/selector-item.html', {
+                                                "title":"Русский",
+                                                "options":['Русский', 'Английский']
+                                            })
+                                        </div>
+                                    </div>
+                                    <div class="general-info__col">
+                                        <div class="form-group">
+                                            <span class="form-group__text">Электронная почта*</span>
+                                            <input type="text" class="form-group__input">
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Страна</span>
+                                            @@include('./modules/selector/selector-item.html', {
+                                                "title":"Россия",
+                                                "options":['Россия', 'США', 'Украина']
+                                            })
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="form-group__text">Город</span>
+                                            @@include('./modules/selector/selector-item.html', {
+                                                "title":"Город",
+                                                "options":['Уфа', 'Москва', 'Санкт-Петербург']
+                                            })
+                                        </div>
+                                        @@include('./modules/radio/radio.html', {
+                                            "id":"i-1",
+                                            "text":"Общие рассылки",
+                                            "group":"g-1"
+                                        })
+                                        @@include('./modules/radio/radio.html', {
+                                            "id":"i-2",
+                                            "text":"Продающая рассылка",
+                                            "group":"g-1"
+                                        })
+                                    </div>
+                                </div>
+                                <div class="general-info__footer">
+                                    <div class="form-group form-group--wide">
+                                        <div class="form-group__text">О себе</div>
+                                        <textarea name="" id="" cols="30" rows="10" class="general-info__textarea"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-purchases">
+                <div class="container">
+                    <div class="purchases">
+                        <div class="purchases__header">
+                            <span class="purchases__title">Купленные уроки</span>
+                        </div>
+                        <div class="purchases__body">
+                            <div class="purchases__table">
+                                <div class="purchases__row purchases__row--head">
+                                    <div class="purchases__cell">Продукт</div>
+                                    <div class="purchases__cell">Дата начала</div>
+                                    <div class="purchases__cell">Дата окончания</div>
+                                    <div class="purchases__cell">Статус</div>
+                                    <div class="purchases__cell">Обновление подписки</div>
+                                    <div class="purchases__cell">Стоимость</div>
+                                </div>
+                                <div class="purchases__row">
+                                    <div class="purchases__cell purchases__cell--name">Годовый курс</div>
+                                    <div class="purchases__cell">02/06/2019</div>
+                                    <div class="purchases__cell">02/06/2020</div>
+                                    <div class="purchases__cell purchases__cell--status is-active">Активен</div>
+                                    <div class="purchases__cell">02/06/2021</div>
+                                    <div class="purchases__cell">8 736 рублей</div>
+                                </div>
+                                <div class="purchases__row">
+                                    <div class="purchases__cell purchases__cell--name">Программа “Подготовь тело к лету”</div>
+                                    <div class="purchases__cell"></div>
+                                    <div class="purchases__cell">Период не ограничен</div>
+                                    <div class="purchases__cell purchases__cell--status is-active">Активен</div>
+                                    <div class="purchases__cell">-</div>
+                                    <div class="purchases__cell">1 000 рублей</div>
+                                </div>
+                                <div class="purchases__row">
+                                    <div class="purchases__cell purchases__cell--name">Ежемесячная подписка</div>
+                                    <div class="purchases__cell">01/06/2019</div>
+                                    <div class="purchases__cell">31/06/2019</div>
+                                    <div class="purchases__cell purchases__cell--status">Завершен</div>
+                                    <div class="purchases__cell">-</div>
+                                    <div class="purchases__cell">3 000 рублей</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="s-credit-cards">
+                <div class="container">
+                    <div class="credit-cards">
+                        <div class="credit-cards__header">
+                            <span class="credit-cards__title">Привязанные карты</span>
+                        </div>
+                        <div class="credit-cards__body">
+                            <div class="credit-cards__cards">
+                                @@include('./modules/credit-card/credit-card.html')
+                                @@include('./modules/credit-card/credit-card.html', {
+                                    "empty":true
+                                })
+
+                            </div>
+                        </div>
+                        <div class="credit-cards__footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Подвал -->
+        @@include('./modules/footer/footer.html')
+    </div>
+    @@include('./modules/popups/login.html')
+    @@include('./modules/popups/register.html')
+    @@include('./modules/popups/restore-password.html')
+    @@include('./modules/popups/thankyou.html')
+    @@include('./template/scripts.html')
+</body>
+</html>

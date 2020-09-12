@@ -1,0 +1,45 @@
+<header class="s-header @@if(context.nomargin){s-header--no-margin}">
+    <div class="container">
+        <div class="header @@if(context.lined){header--lined}">
+            <div class="burger">
+                <span></span>
+            </div>
+            <nav class="header__menu menu-header">
+                <ul class="menu-header__list js-dropdown-menu">
+                    <li class="menu-header__item js-dropdown-btn">
+                        <a href="#" class="menu-header__link menu-header__link--with-arrow">Уроки</a>
+                    </li>
+                    <li class="menu-header__item js-dropdown-btn">
+                        <a href="#" class="menu-header__link menu-header__link--with-arrow">Программы</a>
+                    </li>
+                    <li class="menu-header__item">
+                        <a href="#" class="menu-header__link">Инструкторы</a>
+                    </li>
+                    <li class="menu-header__item">
+                        <a href="#" class="menu-header__link">Тарифы</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="links.html" class="header__logo">
+                <div class="header__img">
+                    <img src="img/logo.png" alt="Лого" />
+                </div>
+            </a>
+            <ul class="header__actions actions-header">
+                <li class="actions-header__item">
+                    <a href="#" class="actions-header__link">
+                        @@include('./mixins/svg-icon.html', {"name":"search", "mod":""})
+                    </a>
+                </li>
+                <li class="actions-header__item">
+                    <a href="#" class="actions-header__link">
+                        @@include('./mixins/svg-icon.html', {"name":"heart", "mod":""})
+                    </a>
+                </li>
+                <li class="actions-header__item">
+                    <a href="#popup-login" class="actions-header__link actions-header__link--underline js-popup-open">Личный кабинет</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

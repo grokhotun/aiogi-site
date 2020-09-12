@@ -1,0 +1,127 @@
+.title-section {
+    // .title-section__title
+    &__title {
+        display: block;
+        font-weight: bold;
+        @include responsiveFont(36, 26, 1);
+        color: #000000;
+        text-transform: uppercase;
+        span {
+            text-transform: none;
+        }
+        &--white {
+            color: #fff;
+        }
+        &--default {
+            text-transform: none;
+        }
+        &--sm {
+            @include responsiveFont(27, 24, 1);
+        }
+    }
+    // .title-section__subtitle
+    &__subtitle {
+        margin: 30px 0px 0px 0px;
+        display: block;
+        font-size: 18px;
+        line-height: 25px;
+        color: #424242;
+    }
+}
+
+.subscribe-form {
+    display: flex;
+    // .subscribe-form__input
+    &__input {
+        margin: 0px 12px 0px 0px;
+    }
+    // .subscribe-form__button
+    &__button {
+        background-color: #282828;
+        font-size: 13px;
+        color: #FFFFFF;
+        padding: 10px 16px;
+        transition: .3s ease;
+        &:hover {
+            background-color: #595959;
+        }
+    }
+}
+
+.free-lesson-mark {
+    display: block;
+    background-color: #FFB800;
+    border-radius: 27px;
+    padding: 4px 16px;
+    font-style: normal;
+    line-height: 18px;
+    font-weight: bold;
+    font-size: 13px;
+    color: #000000;
+}
+
+.text-with-icon {
+    display: flex;
+    align-items: center;
+    & > * {
+        &:not(:last-child) { margin: 0px 8px 0px 0px; }
+    }
+    &__text {
+        display: block;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+    }
+}
+
+.bubbled-text {
+    display: inline-block;
+    background-color: #FFFFFF;
+    padding: 4px 11px;
+    border-radius: 27px;
+    font-size: 13px;
+    color: #000000;
+    &--b {
+        background-color: #2E2E2E;
+        color: #FFFFFF;
+    }
+}
+
+.credit-card {
+    position: relative;
+    width: 325px;
+    height: 194px;
+    background: linear-gradient(267.87deg, #232628 9.36%, #111318 99.72%);
+    border-radius: 11px;
+    &--empty {
+        cursor: pointer;
+        background: #fff;
+        border: 2px dashed #A4A4A4;
+    }
+    // .credit-card__add
+    &__add {
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 16px;
+        color: #282828;
+    }
+    // .credit-card__logo
+    &__logo {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    // .credit-card__number
+    &__number {
+        position: absolute;
+        bottom: 20px;
+        left: 30px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+}

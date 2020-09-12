@@ -1,0 +1,24 @@
+<div class="tariff-card">
+    <div class="tariff-card__header">
+        <div class="tariff-card__duration">
+            <span>@@duration.num</span>
+            <span>@@duration.text</span>
+        </div>
+    </div>
+    <div class="tariff-card__body">
+        <ul class="tariff-card__list">
+            <li class="tariff-card__item">50+ часов йоги</li>
+            <li class="tariff-card__item">10+ направлений йоги разных уровней</li>
+            <li class="tariff-card__item">HD качество на любом экране</li>
+            <li class="tariff-card__item">Комплексные программы</li>
+        </ul>
+        <div class="tariff-card__price">
+            <span>@@price</span>
+            <span>рублей</span>
+        </div>
+        @@if(context.monthly){<span class="tariff-card__price-per-month">@@monthly</span>}
+    </div>
+    <div class="tariff-card__footer">
+        <button class="tariff-card__button btn btn--primary">Выбрать</button>
+    </div>
+</div>

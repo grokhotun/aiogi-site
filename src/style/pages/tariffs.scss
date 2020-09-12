@@ -1,0 +1,96 @@
+.tariffs {
+    // .tariffs__header
+    &__header {
+        text-align: center;
+        margin: 0px 0px 46px 0px;
+    }
+    // .tariffs__body
+    &__body {
+    }
+    // .tariffs__cards
+    &__cards {
+        margin: 0 auto;
+        max-width: 850px;
+        display: flex;
+        flex-wrap: wrap;
+        & > * {
+            flex: 0 0 calc(33% - 20px);
+            margin: 0 10px;
+            @media (max-width: $maxwidth3) {
+                flex: 0 0 100%;
+                margin: 0px 0px 20px 0px;
+            }
+        }
+    }
+}
+
+.free-lessons {
+    // .free-lessons__header
+    &__header {
+        text-align: center;
+        margin: 0px 0px 60px 0px;
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 0px 20px 0px;
+            }
+        }
+    }
+    // .free-lessons__title
+    &__title {
+        display: block;
+        position: relative;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 35px;
+        text-align: center;
+        color: #000000;
+        &:before {
+            content: "";
+            position: absolute;
+            width: calc(50% - 63px);
+            height: 1px;
+            background-color: #c4c4c4;
+            top: 50%;
+            left: 0;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            width: calc(50% - 63px);
+            height: 1px;
+            background-color: #c4c4c4;
+            top: 50%;
+            right: 0;
+        }
+    }
+    // .free-lessons__subtitle
+    &__subtitle {
+        display: block;
+        font-weight: 600;
+        font-size: 15px;
+        color: #000000;
+    }
+    // .free-lessons__text
+    &__text {
+        font-weight: 600;
+        font-size: 13px;
+        color: #393939;
+    }
+    // .free-lessons__btn
+    &__btn {
+    }
+    // .free-lessons__body
+    &__body {
+        position: relative;
+        min-height: 339px;
+    }
+    &__banner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-position: 75% 75%;
+        background-size: cover;
+    }
+}

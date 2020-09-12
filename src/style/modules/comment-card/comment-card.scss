@@ -1,0 +1,156 @@
+.comment-card {
+    display: flex;
+    &--is-response {
+        @media (min-width: $maxwidth3) {
+            max-width: 92%;
+        }
+        margin: 41px 0px 0px 0px;
+        .comment-card {
+            &__photo {
+                width: 46px;
+                height: 46px;
+                @media (max-width: $maxwidth3) {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            &__text {
+                font-size: 12px;
+                line-height: 16px;
+                color: #575757;
+            }
+            &__date {
+                font-size: 12px;
+                line-height: 16px;
+                color: #575757;
+            }
+            &__name {
+                font-size: 13px;
+                line-height: 18px;
+                color: #575757;
+            }
+            &__likes {
+                font-size: 12px;
+                line-height: 16px;
+                color: #575757;
+            }
+            &__response-btn {
+                font-size: 12px;
+                line-height: 16px;
+                color: #575757;
+            }
+
+            &__footer {
+            }
+        }
+    }
+    // .comment-card__col
+    &__col {
+        &--avatar {
+            flex: 0 0 80px;
+            @media (max-width: $maxwidth3) {
+                flex: 0 0 50px;
+            }
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &--content {
+            margin: 0px 0px 0px 24px;
+            @media (max-width: $maxwidth3) {
+                margin: 0px 0px 0px 15px;
+            }
+            & > * {
+                &:not(:last-child) {
+                    margin: 0px 0px 15px 0px;
+                }
+            }
+        }
+    }
+
+    // .comment-card__photo
+    &__photo {
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        overflow: hidden;
+        @media (max-width: $maxwidth3) {
+            width: 46px;
+            height: 46px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .comment-card__header
+    &__header {
+        display: flex;
+        align-items: center;
+    }
+    // .comment-card__name
+    &__name {
+        margin: 0px 15px 0px 0px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+    }
+    // .comment-card__date
+    &__date {
+        font-size: 13px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+    // .comment-card__body
+    &__body {
+    }
+    // .comment-card__text
+    &__text {
+        font-size: 13px;
+        line-height: 18px;
+        color: #000000;
+    }
+    // .comment-card__footer
+    &__footer {
+        display: flex;
+        align-items: center;
+    }
+    // .comment-card__response-btn
+    &__response-btn {
+        background-color: transparent;
+        margin: 0px 35px 0px 0px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000000;
+        text-decoration-line: underline;
+        &:hover {
+            text-decoration-line: none;
+        }
+        @media (max-width: $maxwidth3) {
+            margin: 0px 20px 0px 0px;
+        }
+    }
+    // .comment-card__actions
+    &__actions {
+        display: flex;
+        .m-icon {
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        & > * {
+            &:not(:last-child) {
+                margin: 0px 12px 0px 0px;
+            }
+        }
+    }
+    // .comment-card__likes
+    &__likes {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000000;
+    }
+}

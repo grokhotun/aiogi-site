@@ -1,0 +1,206 @@
+.icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.icon-heart {
+    fill: none;
+    &.is-favourite {
+        fill: #000000;
+    }
+}
+
+.icon-reload {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-mastercard {
+    width: 50px;
+    height: 50px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.btn {
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    &--primary {
+        padding: 17px 22px;
+        color: #fff;
+        background-color: #282828;
+        transition: .3s ease;
+        &:hover{
+            background-color: #595959;
+        }
+    }
+    &--secondary {
+        padding: 12px 15px;
+        color: #000000;
+        background-color: #fff;
+        transition: .3s ease;
+        &:hover{
+            background: darken($color: #fff, $amount: 10);
+        }
+    }
+    &--empty {
+        padding: 12px 54px;
+        color: #000000;
+        border: 1px solid rgba(12, 12, 12, 0.21);
+        transition: .3s ease;
+        &:hover {
+            color: #fff;
+            background-color: #595959;
+        }
+    }
+}
+
+.input-field {
+    width: 100%;
+    padding: 11px 0 11px 15px;
+    border: 1px solid #DFDFDF;
+    @include placeholder {
+        font-weight: normal;
+        font-size: 13px;
+        color: #818181;
+    }
+}
+
+.form-group {
+    width: 100%;
+    position: relative;
+    max-width: 271px;
+    &--wide {
+        max-width: 100%;
+    }
+    &.has-danger {
+        input {
+            border: 1px solid #ff0000;
+        }
+
+        textarea {
+            border: 1px solid #ff0000;
+        }
+    }
+    .text-help {
+        width: 100%;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        color: red;
+    }
+    &__text {
+        display: block;
+        padding: 0px 0px 0px 20px;
+        margin: 0px 0px 9px 0px;
+        font-size: 13px;
+        line-height: 18px;
+        color: rgba(40, 40, 40, 0.5);
+    }
+    &__input {
+        width: 100%;
+        padding: 15px 0 15px 22px;
+        background: #F9F9F9;
+        border: 1px solid #6C6C6C;
+        border-radius: 64px;
+        @include placeholder {
+            font-size: 13px;
+            line-height: 18px;
+            color: #000000;
+        }
+    }
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // .checkbox__input
+    &__input {
+        display: none;
+        &:checked ~ .checkbox__custom {
+            &:after {
+                content:'';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70%;
+                height: 70%;
+                background-color: #121212;
+            }
+        }
+    }
+
+    // .checkbox__custom
+
+    &__custom {
+        position: relative;
+        display: block;
+        width: 17px;
+        height: 17px;
+        border: 1px solid #262626;
+        margin: 0px 13px 0px 0px;
+    }
+
+    // .checkbox__text
+
+    &__text {
+        font-size: 14px;
+        color: #000000;
+    }
+}
+
+.radio {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // .radio__input
+    &__input {
+        display: none;
+        &:checked ~ .radio__custom {
+            &:after {
+                content:'';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 70%;
+                height: 70%;
+                background-color: #121212;
+            }
+        }
+    }
+
+    // .radio__custom
+
+    &__custom {
+        position: relative;
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        border: 1px solid #262626;
+        margin: 0px 13px 0px 0px;
+    }
+
+    // .radio__text
+
+    &__text {
+        font-size: 14px;
+        color: #000000;
+    }
+}
