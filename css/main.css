@@ -3595,15 +3595,6 @@ h6 {
   position: relative;
 }
 
-.menu-header__link--with-arrow:after {
-  content: '';
-  margin: 0px 0px 0px 5px;
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  background: url("../img/svg/sprite.svg#arrow") no-repeat;
-}
-
 .actions-header {
   display: -webkit-box;
   display: -webkit-flex;
